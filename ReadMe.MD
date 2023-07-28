@@ -10,19 +10,32 @@ It only requires 7MB Storage.
 
 1. Run CMD.EXE
 2. go to the directory of AutoWallpaper
-3. Operation
-    `AutoWallpaper.exe <.AWC Configuration File> <UTC Time Zone>`
-    Then, AutoWallpaper is started, Press Ctrl+C in the AutoWallpaper Window to quit
+3. Run
+    `AutoWallpaper.exe <.AWC Configuration File> <UTC Time Zone(Not needed)>`
+    Then, AutoWallpaper is started.
+4. find the "AutoWallpaperTrayIcon" in your system tray (in the taskbar), click it and it will show a menu, click "Exit"
 
   ## What is the UTC time zone and how to set it
 
-  UTC time zone:
->search in wikipedia
+UTC will be set by AutoWallpaper automatically
 
-UTC+0 for UK
+## Creating .AWC Files
 
-UTC-5~UTC-10 for US
+.AWC File can be opened with Notepad or other TXT file Editor, it looks like this:
 
-UTC+9 for Japan/Korea
+```
+2;
+\BigSur\Big Sur Graphic_*.jpg；
+6;
+Apple macOS BigSur Wallpaper
+```
 
-UTC+10 for Australia
+You might be confused, so here is its meaning
+
+```
+<How Many Pictures>;
+<Where is the Pictures, Using * to Numbers> !AutoWallpaper's Path\Wallpapers\the directory
+<hours add(for example: 1:Morning+Afternoon 2:Evening+Night, it would be the time sun rises)>
+<Wallpaper Name>
+```
+
